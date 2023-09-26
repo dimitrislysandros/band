@@ -1,0 +1,64 @@
+@import '../../../assets/meta/Fonts/stylesheet.css';
+
+
+nav {
+  //  background-color: black;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+  .nav-item {
+    margin: 2rem;
+    border: white 1px solid;
+  }
+  .nav-item.active a{
+    color:white;
+  }
+  li {
+    a {
+      color: white;
+    }
+    :hover{
+      color: #913597;
+    }
+  }
+  .navbar-form.navbar-center {
+    float: none;
+    text-align: center;
+  }
+  i{
+    color: #913597;
+  }
+
+
+}
+
+a.navbar-brand {
+font-size: 1rem;
+    font-family:'nipseyregular', Courier, monospace;
+
+    text-decoration: none;
+
+    color:#913597;
+
+}
+
+.btn.btn-themed{
+font-size: 2rem;
+    font-family:'nipseyregular', Courier, monospace;
+  background-color: #913597 !important;
+  color: white
+}
+
+
+
+@media (max-width:1000px){
+nav{
+  .nav-item {
+    margin: 1rem;
+    // max-width: 50%;
+  }
+  font-size: 1rem;
+}
+}

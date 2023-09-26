@@ -1,25 +1,4 @@
-.bg-image {
-    // background-image: url("../../../assets/meta/jimmy_li_logo.png");
-    background: linear-gradient(rgba(90, 8, 90, 0.4), #1a1b20), url("../../../assets/meta/jimmy_li_logo.png");  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(rgba(90,8,41,0.4),#1a1b20), url("../../../assets/meta/jimmy_li_logo.png"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-color: #1a1b20;
-    background-position: center;
-    
-}
 
-.header-s {
-    height: 400px;
-    width: 100%;
-    text-align: center;
-    padding-top: 100px;
-    color: white;
-    overflow: hidden;
-    background: #C04848;  /* fallback for old browsers */
-    background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url("https://ik.imagekit.io/ikmedia/blog/hero-image.jpeg");  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url("https://ik.imagekit.io/ikmedia/blog/hero-image.jpeg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
-    background-repeat: no-repeat;
+* {
+  font-family:'nipseyregular', Courier, monospace;
 }

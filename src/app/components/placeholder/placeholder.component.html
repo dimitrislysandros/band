@@ -1,4 +1,7 @@
-<div class="bg-image" >
 
-   
+<div *ngIf="loaded" class="white-color">
+
+  <router-outlet></router-outlet>
 </div>
+
+<app-loader *ngIf="!loaded"></app-loader>

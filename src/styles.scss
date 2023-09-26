@@ -2,3 +2,55 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+@import 'styleLibrary.scss';
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+@import '../src/assets/meta/Fonts/stylesheet.css';
+
+
+html, body {
+  height: 100%;
+}
+
+.purple-color{
+  color:var(--purple-main);
+}
+
+.black-color{
+  color:var(--black-main);
+}
+
+.white-color{
+  color:white;
+}
+
+
+
+.main-container {
+
+  margin-top: 1rem;
+    height: 100%;
+    width:100%;
+    border-collapse: collapse;
+    min-height: 30rem;
+    border-radius: 3rem;
+}
+#footer {
+
+  vertical-align: bottom;
+  align-self:auto;
+}
+
+
+html, body { height: 100%; }
+// body { margin: 0; font-family:'ayuga_demoregular'}
+
+
+
+@media (max-width:770px){
+
+.main-container{
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+}

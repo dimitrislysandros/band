@@ -1,0 +1,87 @@
+<!-- <h1 class="">About</h1> -->
+
+<div class="news" >
+
+  <ngb-carousel >
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[0]" alt="Random first slide" />
+      </div>
+      <div class="carousel-caption">
+        <h2>Hello.</h2>
+        <p>I am Dimitris and this is a part of me</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[1]" alt="Random second slide" />
+      </div>
+      <div class="carousel-caption">
+        <h2>Concerned</h2>
+        <p>For all the hate in humanity.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[2]" alt="Random second slide" />
+      </div>
+      <div class="carousel-caption bg-black-full">
+        <h2>Hoping</h2>
+        <p>That one day you will love.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[3]" alt="Random second slide" />
+      </div>
+      <div class="carousel-caption bg-black-full">
+        <h1>L O V E</h1>
+        <p>YOURSELF AND THE WORLD.</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <!--
+  <mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          This is the expansion title
+        </mat-panel-title>
+        <mat-panel-description>
+          This is a summary of the content
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>This is the primary content of the panel.</p>
+    </mat-expansion-panel>
+
+  </mat-accordion> -->
+  <!-- <div class="card"  *ngFor="let item of news">
+    <a href="{{item.url}}" target="_blank" >
+
+      <img class="card-img-top" src="{{item.img}}" alt="Card image cap">
+    </a>
+    <div class="card-body">
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h2>{{item.title}}</h2>
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+        <p>{{item.text}}</p>
+      </mat-expansion-panel>
+
+      <a href="{{item.url}}" target="_blank" class="btn btn-themed mt-2">
+        {{item.btnText}}
+      </a>
+    </div>
+
+    <hr class="horizontal" >
+
+  </div> -->
+
+
+
+<ng-template #NoNews>
+No News
+</ng-template>

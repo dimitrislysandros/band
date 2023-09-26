@@ -1,0 +1,46 @@
+@import url(../styleLibrary.scss);
+
+* {
+  font-family:'nipseyregular', Courier, monospace;
+}
+
+
+.bg-image {
+  // background-image: url("../assets/meta/viber_image_2022-01-12_11-52-19-955.png");
+  background: linear-gradient(rgba(145, 53, 151, 0.4), #1a1b20),
+    url("https://i.imgur.com/ekGsg7Z.jpg"); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(rgba(145, 53, 151, 0.7), #1a1b20),
+    url("https://i.imgur.com/0jR4K3J.png"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-color: #1a1b20;
+  background-position: center;
+  background-size: cover;
+
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+
+
+.brand-image {
+  // background-image: url("../../../assets/meta/jimmy_li_logo.png");
+  margin-top: 2rem;
+
+  max-height: 5rem;
+  max-width: 5rem;
+  background-repeat: no-repeat;
+  background-color: #1a1b20;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.bg-black {
+  opacity: 0.745;
+  background: #1a1b20;
+  // background: linear-gradient(0deg, rgba(26,27,32,0.1) 0%, rgba(26,27,32,0.1) 100%);
+}
+.btn.btn-themed{
+  background-color: #913597 !important;
+}
