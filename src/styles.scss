@@ -33,8 +33,14 @@ html, body {
     width:100%;
     border-collapse: collapse;
     min-height: 30rem;
-    border-radius: 3rem;
+    min-width: 400px;
+    border-radius: 1rem;
 }
+
+.bg-container{
+  min-width:fit-content;
+}
+
 #footer {
 
   vertical-align: bottom;
