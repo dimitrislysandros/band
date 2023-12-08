@@ -4,7 +4,7 @@
     "id": "1",
     "title": "Sugarcanes & Grapes",
     "type": "Album",
-    "iframe":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1691713797%3Fsecret_token%3Ds-Dvy29xLWhCp&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "iframe":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1691713797&color=%23cd00d8&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true",
     "comments": [],
     "cover": "/assets/meta/Cover.jpg",
     "releaseDate": "TBA",
