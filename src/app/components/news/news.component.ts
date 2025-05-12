@@ -13,7 +13,7 @@ export class NewsComponent implements OnInit {
   news:News[]=[];
   images = ['https://i.imgur.com/aq77J1V.jpg',
             'https://i.imgur.com/AZOPxav.jpg',
-            'https://i.imgur.com/53YSehF.jpg',
+            'https://i.imgur.com/JjuWnv3.jpeg',
             'https://i.imgur.com/fgZnaKl.jpg'
           ];
   ngOnInit(): void {

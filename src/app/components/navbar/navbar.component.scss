@@ -9,18 +9,18 @@ nav {
   justify-content: center;
   font-size: 2rem;
   .nav-item {
-    margin: 2rem;
+    margin: 1rem;
     border: white 1px solid;
   }
   .nav-item.active a{
-    color:white;
+    color:#cbad31;
   }
   li {
     a {
       color: white;
     }
     :hover{
-      color: #913597;
+      color: #cbad31;
     }
   }
   .navbar-form.navbar-center {
@@ -28,7 +28,8 @@ nav {
     text-align: center;
   }
   i{
-    color: #913597;
+
+     color: #cbad31;
   }
 
 
@@ -40,14 +41,14 @@ font-size: 1rem;
 
     text-decoration: none;
 
-    color:#913597;
+    // color:#cbad31;
 
 }
 
 .btn.btn-themed{
 font-size: 2rem;
     font-family:'nipseyregular', Courier, monospace;
-  background-color: #913597 !important;
+  background-color: #cbad31 !important;
   color: white
 }
 
