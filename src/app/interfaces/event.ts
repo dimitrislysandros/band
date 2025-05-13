@@ -1,11 +1,11 @@
-export interface Event{
-  eventid: string;
-  title: string;
-  text: string;
+export interface Gig{
+  
+  city: string;
+  text?: string;
   date: string;
   time: string;
-  openningTime: string;
   venue:string;
+  openningBand: string;
   bookUrl?: string;
   mapUrl?: string;
 }

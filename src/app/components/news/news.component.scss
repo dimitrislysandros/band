@@ -20,8 +20,8 @@
 
     img{
     justify-content: center;
-    max-width: 75%;
-      max-height: 100%;
+    max-width: 100%;
+      max-height: auto;
       border-radius: 3rem;
       background-size:cover;
       vertical-align: middle;
@@ -59,7 +59,7 @@
       bottom:0;
       min-width: 100%;
       min-height: auto;
-      background-color:rgba(0, 0, 0, 0.5);
+      background-color:rgba(0, 0, 0, 0.1);
       justify-content: center;
       // padding-bottom: 25%rem;
       h1, h2,p{
@@ -89,7 +89,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 2px 15px 5px #913597;
+    box-shadow: 0px 2px 15px 5px #cbad31;
 a{
 
   .card-img-top {
@@ -125,7 +125,7 @@ hr.horizontal{
 }
 }
 .btn.btn-themed{
-  background-color: #913597 !important;
+  background-color: #cbad31 !important;
   color: white
 }
 
@@ -203,11 +203,11 @@ h1, h2, h3 {
     // min-width: 100%;
     max-width: 75%;
     min-height: auto;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.50);
     // padding-bottom: 25%rem;
     h1,h2,p{
       position:relative;
-      top:20%!important;
+      top:50%!important;
       // left:auto;
       font-size:1rem !important;
       // padding: 2rsem;
@@ -220,7 +220,7 @@ h1, h2, h3 {
   .news{
     padding: 1rem;
     // margin: 3rem;
-    // border-top: 1px solid #913597;
+    // border-top: 1px solid #cbad31;
     justify-content: center;
     align-items: center;
     text-align: center;

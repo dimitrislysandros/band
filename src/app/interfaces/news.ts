@@ -6,4 +6,5 @@ export interface News{
   btnText: string;
   url?: string;
   img?: string;
+  images?:[img:string]
 }

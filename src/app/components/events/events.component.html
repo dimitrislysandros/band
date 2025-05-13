@@ -1,0 +1,26 @@
+
+<div id="events" >
+    
+    <hr>
+    <h1>Events</h1>
+    <div *ngIf="gigs; else NoGigs">
+        <div class="row" *ngFor="let gig of gigs" >
+            <div class="col-md-3">Date {{gig.date}}</div>
+            <div class="col-md-3">City {{gig.city}}</div>
+            <div class="col-md-3">Venue {{gig.venue}}
+                <br>
+                With <p> {{gig.openningBand}}</p>
+            </div>
+            <div class="col-md-3">
+                <a href='{{gig.bookUrl}}' class="btn btn-themed">Book</a>
+            </div>
+        
+        </div>
+    
+    </div>
+</div>
+
+
+<ng-template #NoGigs>
+No upcoming events
+</ng-template>

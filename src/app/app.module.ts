@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialExampleModule } from 'src/material.module';
 import { PhotosComponent } from './components/photos/photos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { EventsComponent } from './components/events/events.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     LoaderComponent,
     SongsComponent,
     NewsComponent,
-    PhotosComponent
+    PhotosComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,

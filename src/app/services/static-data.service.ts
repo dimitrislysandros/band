@@ -3,6 +3,7 @@ import { News } from '../interfaces/news';
 import { Album } from '../interfaces/discography';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { Gig } from '../interfaces/event';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +20,28 @@ export class StaticDataService {
   },];
 
 
+  bannerImages:string[]=['https://i.imgur.com/vLPrGwf.jpeg',
+            'https://i.imgur.com/Xa51yrY.jpeg',
+            'https://i.imgur.com/5IFiM0J.jpeg',
+            'https://i.imgur.com/2gJoe0l.jpeg',];
 
+  bannerImagesMobile:string[]=['https://i.imgur.com/JjuWnv3.jpeg',
+            'https://i.imgur.com/3BEgSkW.jpeg',
+            'https://i.imgur.com/AnYNLic.jpeg',
+            'https://i.imgur.com/JLjIuPY.jpeg'];
+
+    gigs:Gig[]=
+    [
+  //     {
+  //         city: 'Athens',
+  // openningBand:'Toyotomi',
+  // date: '22/10/25',
+  // time: '19:00',
+  //   venue:'Astoria',
+  // bookUrl: 'string',
+  // mapUrl: 'string;'
+  //     }
+    ];
   // public albums:Album[]=[];
 
 constructor(private http: HttpClient) { }
@@ -35,7 +57,22 @@ getData(url: string): Observable<any> {
     return this.news;
   }
 
+  getBanners(){
+    return this.bannerImages;
+  
+  }
+
+  getMobileBanners(){
+    return this.bannerImagesMobile
+  }
+
   getAlbums() {
     // return this.albums;
+  }
+
+
+  getGigs() {
+        return this.gigs;
+   
   }
 }
