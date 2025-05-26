@@ -82,7 +82,7 @@
     max-width: 30rem;
     // border: 1px purple solid;
     background-color: black !important;
-    opacity: 1;
+    opacity: 0.7;
     padding: 1rem;
     margin: auto;
     margin-top:2rem;
@@ -130,7 +130,7 @@ hr.horizontal{
 }
 
 h1, h2, h3 {
-  font-family:'nipseyregular', Courier, monospace;
+  font-family:'DELIRIUM', Courier, monospace;
 }
 .carousel-control-prev-icon {
   display:none;
@@ -138,8 +138,8 @@ h1, h2, h3 {
 
 .carousel-control-prev, .carousel-control-next{
   width:50%;
-  // visibility: hidden;
-  // display:none;
+  visibility: hidden;
+  display:none;
 }
 
 

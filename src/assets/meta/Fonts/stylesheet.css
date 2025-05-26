@@ -22,3 +22,41 @@
     font-style: normal;
 
 }
+
+
+@font-face {
+    font-family: 'DELIRIUM';
+    src: url('DELIRIUM NCV.ttf') format('woff2'),
+         url('DELIRIUM NCV.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DELIRIUM_NEON';
+    src: url('DELIRIUM NEON NCV.ttf') format('woff2'),
+         url('DELIRIUM NEON NCV.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p, h1, h2, h3, h4, h5 {
+  font-family:'DELIRIUM', Courier, monospace;
+}
+p{
+  font-size: 1rem;
+}
+h1{
+  font-size: 5rem;
+}
+h2{
+  font-size: 4rem;
+}
+h3{
+  font-size: 3rem;
+}
+h4{
+  font-size: 2rem;
+}

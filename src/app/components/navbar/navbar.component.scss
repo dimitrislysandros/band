@@ -7,7 +7,7 @@ nav {
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-size: 2rem;
+  
   .nav-item {
     margin: 1rem;
     border: white 1px solid;
@@ -18,6 +18,9 @@ nav {
   li {
     a {
       color: white;
+  font-size: 2rem;
+  font-display: auto;    
+    font-family:'DELIRIUM_NEON', Courier, monospace !important;
     }
     :hover{
       color: #cbad31;
@@ -37,7 +40,7 @@ nav {
 
 a.navbar-brand {
 font-size: 1rem;
-    font-family:'nipseyregular', Courier, monospace;
+    font-family:'DELIRIUM', Courier, monospace !important;
 
     text-decoration: none;
 
@@ -47,7 +50,7 @@ font-size: 1rem;
 
 .btn.btn-themed{
 font-size: 2rem;
-    font-family:'nipseyregular', Courier, monospace;
+    font-family:'DELIRIUM', Courier, monospace;
   background-color: #cbad31 !important;
   color: white
 }

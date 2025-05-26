@@ -1,7 +1,8 @@
 @import url(../styleLibrary.scss);
 
-* {
-  font-family:'nipseyregular', Courier, monospace;
+
+a {
+  font-family:'DELIRIUM_NEON', Courier, monospace;
 }
 
 
@@ -11,9 +12,9 @@
   //   url("https://i.imgur.com/ekGsg7Z.jpg"); /* Chrome 10-25, Safari 5.1-6 */
 //    url("https://i.imgur.com/0jR4K3J.png"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 background: linear-gradient(rgba(203, 173, 49, 0.6), #1a1b20),
-    url("https://i.imgur.com/qpggnNC.jpeg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    url("https://i.imgur.com/wfrU1Eb.jpeg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  height: 100%;
+  width: 100%;
   // width: 100%;
   background-repeat: no-repeat;
   background-color: #1a1b20;
@@ -44,7 +45,7 @@ background: linear-gradient(rgba(203, 173, 49, 0.6), #1a1b20),
 // }
 
 .bg-black {
-  opacity: 0.8;
+  opacity: 0.7;
   background: #1a1b20;
   // background: linear-gradient(0deg, rgba(26,27,32,0.1) 0%, rgba(26,27,32,0.1) 100%);
 }
