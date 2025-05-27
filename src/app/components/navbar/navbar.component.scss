@@ -17,13 +17,14 @@ nav {
   }
   li {
     a {
-      color: white;
-  font-size: 2rem;
+      color: #cbad31;
+  font-size: 3rem;
+  padding:1rem;
   font-display: auto;    
     font-family:'DELIRIUM_NEON', Courier, monospace !important;
     }
     :hover{
-      color: #cbad31;
+      color: white;
     }
   }
   .navbar-form.navbar-center {

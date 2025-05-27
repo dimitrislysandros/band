@@ -4,21 +4,21 @@
 
   <ngb-carousel >
     <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="images[0]" alt="Welcome to my Jam" />
+      <div class="picsum-img-wrapper ">
+        <img class="first-image" [src]="images[0]" alt="Welcome to my Jam" />
       </div>
-      <!-- <div class="carousel-caption">
-        <h2>WELCOME TO MY JAM</h2>
-        <p>I am Dimitris and this is a part of me</p>
-      </div> -->
+      <div class="carousel-caption">
+        <h2>{{captions[0]}}</h2>
+        <p>{{captions[1]}}</p>
+      </div>
     </ng-template>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
         <img [src]="images[1]" alt="Random second slide" />
       </div>
       <div class="carousel-caption">
-        <h2>Concerned</h2>
-        <p>About the numbness.</p>
+        <h2>{{captions[2]}}</h2>
+        <p>{{captions[3]}}</p>
       </div>
     </ng-template>
     <ng-template ngbSlide>
@@ -26,8 +26,8 @@
         <img [src]="images[2]" alt="Random second slide" />
       </div>
       <div class="carousel-caption bg-black-full">
-        <h2>Hoping</h2>
-        <p>That one day we will rise.</p>
+        <h2>{{captions[4]}}</h2>
+        <p>{{captions[5]}}</p>
       </div>
     </ng-template>
     <ng-template ngbSlide>
@@ -35,8 +35,8 @@
         <img [src]="images[3]" alt="Random second slide" />
       </div>
       <div class="carousel-caption bg-black-full">
-        <h1>L O V E</h1>
-        <p>YOURSELF AND THE WORLD.</p>
+        <h1>{{captions[6]}}</h1>
+        <p>{{captions[3]}}</p>
       </div>
     </ng-template>
   </ngb-carousel>

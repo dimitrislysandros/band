@@ -2,14 +2,34 @@
 <div id="events" >
     
     <hr>
-    <h1>Events</h1>
-    <div *ngIf="gigs; else NoGigs">
+    <h3>Events</h3>
+    <div *ngIf="gigs.length>0; else NoGigs">
         <div class="row" *ngFor="let gig of gigs" >
-            <div class="col-md-3">Date {{gig.date}}</div>
-            <div class="col-md-3">City {{gig.city}}</div>
-            <div class="col-md-3">Venue {{gig.venue}}
+            <div class="col-md-3"> 
+                <p>
+
+                    {{gig.date}}
+                </p>
+            </div>
+            <div class="col-md-3"> 
+            <p>
+
+                {{gig.city}}
+            </p>
+            
+            </div>
+            <div class="col-md-3"> 
+                <p>
+
+                    {{gig.venue}}
+                </p>
                 <br>
-                With <p> {{gig.openningBand}}</p>
+                <span>
+
+                    w/
+                    
+                     {{gig.openningBand}}
+                </span>
             </div>
             <div class="col-md-3">
                 <a href='{{gig.bookUrl}}' class="btn btn-themed">Book</a>
@@ -22,5 +42,10 @@
 
 
 <ng-template #NoGigs>
-No upcoming events
+    <div class="p-5">
+
+         <h5>
+            No upcoming events
+         </h5>
+    </div>
 </ng-template>

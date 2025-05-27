@@ -11,7 +11,24 @@
 html, body {
   height: 100%;
 }
-
+p, h1, h2, h3, h4, h5 {
+  font-family:'DELIRIUM', Courier, monospace;
+}
+p{
+  font-size: 10vh ;
+}
+h1{
+  font-size: 16rem;
+}
+h2{
+  font-size: 13rem;
+}
+h3{
+  font-size: 12rem ;
+}
+h4{
+  font-size: 11rem ;
+}
 .purple-color{
   color:var(--purple-main);
 }
@@ -54,7 +71,9 @@ html, body { height: 100%; }
 
 
 @media (max-width:770px){
-
+.bg-image{
+  height: 100%;
+}
 .main-container{
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;

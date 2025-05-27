@@ -3,17 +3,50 @@
 
 #events{
 
-h1{
-    font-family:'DELIRIUM', Courier, monospace;
+.row{
+  padding: 1rem;
+  // background-color: white;
+  border-top: 1px white solid;
+  line-height: 100%;
+  // vertical-align: middle;
+  // justify-content: center;
+  .col{
+    justify-self:center;
+    justify-content: center;
+    align-self:center;
+    vertical-align: middle;
+  }
+}
+
+h3{
+color: #cbad31;
+  padding: 1rem;
+    font-family:'DELIRIUM_NEON', Courier, monospace;
+    font-size: 13vh;
 }
     margin-top:5rem;
     vertical-align: middle;
     align-content: center-;
 }
+h5{
+    font-family:'DELIRIUM', Courier, monospace;
+    font-size: 8vh;
+    color:white;
+}
 
+p{
+  
+    font-family:'Courier', monospace;
+  font-size: 5vh;
+}
+span{
+  font-family:'Courier', monospace;
+  font-size: 3vh;
+}
 
 .btn.btn-themed{
   background-color: #cbad31 !important;
   color:white !important;
   border: 1px solid white;
+  font-size: 6svh;
 }

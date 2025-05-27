@@ -20,15 +20,28 @@ export class StaticDataService {
   },];
 
 
-  bannerImages:string[]=['https://i.imgur.com/vLPrGwf.jpeg',
+  bannerImages:string[]=[
+    'https://i.imgur.com/cekKgUS.jpeg',
+            'https://i.imgur.com/vLPrGwf.jpeg',
             'https://i.imgur.com/Xa51yrY.jpeg',
-            'https://i.imgur.com/5IFiM0J.jpeg',
             'https://i.imgur.com/2gJoe0l.jpeg',];
 
-  bannerImagesMobile:string[]=['https://i.imgur.com/JjuWnv3.jpeg',
+  bannerImagesMobile:string[]=[
+    'https://i.imgur.com/wfrU1Eb.jpeg',
+    'https://i.imgur.com/JjuWnv3.jpeg',
             'https://i.imgur.com/3BEgSkW.jpeg',
-            'https://i.imgur.com/AnYNLic.jpeg',
             'https://i.imgur.com/JLjIuPY.jpeg'];
+
+    captions:string[]=[
+      'OUT',
+      'NOW',
+      '',
+      '',
+      '',
+      '',
+      '',
+      ''
+    ]
 
     gigs:Gig[]=
     [
@@ -74,5 +87,9 @@ getData(url: string): Observable<any> {
   getGigs() {
         return this.gigs;
    
+  }
+
+  getCaptions(){
+    return this.captions;
   }
 }

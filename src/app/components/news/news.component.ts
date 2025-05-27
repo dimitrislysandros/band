@@ -13,10 +13,13 @@ export class NewsComponent implements OnInit {
   news:News[]=[];
   imagesMob:string[] = [];
   images:string[] = [];
+  captions:string[]=[];
   ngOnInit(): void {
     this.getNews();
     this.getImages();
     this.getMobImages();
+
+    this.getCaptions();
     if(screen.width<=screen.height){
       this.images=this.imagesMob;
     }
@@ -31,5 +34,8 @@ export class NewsComponent implements OnInit {
   }
   getMobImages(){
     this.imagesMob=this.staticDataService.getMobileBanners();
+  }
+  getCaptions(){
+    this.captions=this.staticDataService.getCaptions();
   }
 }
