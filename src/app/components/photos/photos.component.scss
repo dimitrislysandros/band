@@ -113,6 +113,7 @@ a{
     margin-top: 2rem;
     justify-content: center;
     // width: 50%;
+
     border-radius: 1rem;
   }
   :hover{
@@ -160,8 +161,12 @@ h1, h2, h3 {
 @media (max-width:1300px){
   .carousel-caption{
     h1,h2,p{
-      top:40%;
-      font-size: 2rem !important;
+      top: 10% !important;;
+      font-size: 2rem ;
+    }
+    a {
+
+      font-size: 4vh !important;
     }
   }
 }
@@ -213,7 +218,7 @@ h1, h2, h3 {
     top:0;
     left: 0%;
     right: 0%;
-    bottom:0;
+    // bottom:0;
     // min-width: 100%;
     max-width: 75%;
     min-height: auto;
@@ -221,17 +226,15 @@ h1, h2, h3 {
     // padding-bottom: 25%rem;
     h1,h2,p{
       position:relative;
-      top:50%!important;
+      top:10%;
       // left:auto;
-      font-size:1rem !important;
+      font-size:2vh !important;
       // padding: 2rsem;
       text-align: center;
       // font-family: 'Roboto Thin', Helvetica, sans-serif;
     }
     a{
-        position: relative;
-        // bottom:0;
-        // left:20%;
+       
         font-size: 1vh;
         z-index: 999;
         max-width: 100%;
