@@ -20,7 +20,7 @@ export class SongsComponent implements OnInit {
   ngOnInit(): void {
 
 
-    if(environment.production){
+    if(environment.apiUrl){
 
       this.staticDataService.getData("./assets/albums.json").subscribe((result)=> {
         console.log(result);

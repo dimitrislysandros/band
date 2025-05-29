@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NewsComponent } from './components/news/news.component';
-import { PhotosComponent } from './components/photos/photos.component';
 import { PlaceholderComponent } from './components/placeholder/placeholder.component';
 import { SongsComponent } from './components/songs/songs.component';
 import { CommonModule } from '@angular/common';
+import { PhotosComponent } from './components/photos/photos.component';
+import { AdminFormComponent } from './components/admin-form/admin-form.component';
 
 const routes: Routes = [
-  { path: '', component: NewsComponent },
+  { path: '', component: PhotosComponent },
   { path: 'listen', component: SongsComponent },
+  { path: '2girls1CupAdmin', component: AdminFormComponent },
 
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

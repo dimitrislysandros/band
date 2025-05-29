@@ -9,12 +9,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { SongsComponent } from './components/songs/songs.component';
-import { NewsComponent } from './components/news/news.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialExampleModule } from 'src/material.module';
-import { PhotosComponent } from './components/photos/photos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EventsComponent } from './components/events/events.component';
+import { AdminFormComponent } from './components/admin-form/admin-form.component';
+import { PhotosComponent } from './components/photos/photos.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,9 +25,9 @@ import { EventsComponent } from './components/events/events.component';
     FooterComponent,
     LoaderComponent,
     SongsComponent,
-    NewsComponent,
     PhotosComponent,
-    EventsComponent
+    EventsComponent,
+    AdminFormComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +36,8 @@ import { EventsComponent } from './components/events/events.component';
     BrowserAnimationsModule,
     MaterialExampleModule,
     HttpClientModule,
-    
+    FormsModule,
+    BrowserModule
 
   ],
   providers: [],

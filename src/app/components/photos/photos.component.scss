@@ -1,0 +1,249 @@
+::ng-deep .carousel-control-prev-icon, ::ng-deep .carousel-control-next-icon{
+  opacity: 0!important;
+}
+
+
+
+.news{
+  padding: 1rem;
+  // margin: 3rem;
+  // border-top: 1px solid #913597;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 30rem;
+  .carousel{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 3rem;
+    // border:1px white solid;
+    
+    img{
+    justify-content: center;
+    width: 60%;
+      max-height: auto;
+      border-radius: 3rem;
+      background-size:cover;
+      vertical-align: middle;
+      background-position: 50% 50%;
+
+      height: auto;
+    }
+    ::ng-deep .carousel-control-prev, ::ng-deep .carousel-control-next {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50% !important;
+      padding: 0;
+      color: transparent;
+      text-align: center;
+      background: none;
+      border: 0;
+      // opacity: 0 !important;
+      transition: opacity 0.15s ease;
+
+  }
+    .bg-black-full{
+    }
+    .carousel-caption{
+      color:white;
+      // font-size: 3rem;
+      line-height: 2rem;
+      top:0rem;
+      left: 0%;
+      right: 0%;
+      bottom:0;
+      min-width: 100%;
+      min-height: auto;
+      background-color:rgba(0, 0, 0, 0.1);
+      justify-content: center;
+      // padding-bottom: 25%rem;
+      h1, h2{
+        position: relative;
+        top:30%;
+        // left:auto;
+        font-size:5rem;
+        // padding: 2rsem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        // max-width:70%;
+        // font-family: 'Roboto Thin', Helvetica, sans-serif;
+      }
+      p{
+        position: relative;
+        top:50%;
+        // left:auto;
+        font-size:5rem;
+        // padding: 2rsem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      a{
+        position: absolute;
+        top:60%;
+        left:20%;
+        font-size: 8vh;
+        z-index: 999;
+        font-family: 'DELIRIUM_NEON';
+      }
+
+    }
+  }
+  .card{
+    border-radius: 1rem;
+    max-width: 30rem;
+    // border: 1px purple solid;
+    background-color: black !important;
+    opacity: 0.7;
+    padding: 1rem;
+    margin: auto;
+    margin-top:2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 15px 5px #913597;
+a{
+
+  .card-img-top {
+    margin-top: 2rem;
+    justify-content: center;
+    // width: 50%;
+    border-radius: 1rem;
+  }
+  :hover{
+    opacity: 0.8;
+  }
+}
+  }
+  .mat-expansion-panel-header,
+.mat-expansion-panel, .mat-expansion-panel-header-title {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: inherit;
+  color: white;
+
+}
+  .mat-expansion-panel-header{
+    border-radius: 1rem;
+    :hover{
+      text-decoration:underline;
+    }
+  }
+
+hr.horizontal{
+
+  // border-top: 4px solid red;
+}
+}
+
+
+h1, h2, h3 {
+  font-family:'DELIRIUM', Courier, monospace;
+}
+.carousel-control-prev-icon {
+  display:none;
+}
+
+.carousel-control-prev, .carousel-control-next{
+  width:50%;
+  visibility: hidden;
+  display:none;
+}
+
+
+@media (max-width:1300px){
+  .carousel-caption{
+    h1,h2,p{
+      top:40%;
+      font-size: 2rem !important;
+    }
+  }
+}
+
+@media (max-width:850px){
+
+  .carousel{
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 15rem;
+    border-radius: 3rem;
+    // border:1px white solid;
+    img{
+    justify-content: center;
+    max-width: 100%;
+      min-height: 15rem;
+      border-radius: 3rem;
+      background-size:contain;
+      vertical-align: middle;
+      background-position: 50% 50%;
+      // width: 100%;
+      // height: 100%;
+    }
+    ::ng-deep  .carousel-control-prev-icon,::ng-deep  .carousel-control-next-icon{
+      // display: none!important;
+    }
+    ::ng-deep .carousel-control-prev, ::ng-deep .carousel-control-next {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50% !important;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+      background: none;
+      border: 0;
+      // opacity: 0 !important;
+      transition: opacity 0.15s ease;
+  }
+
+  .carousel-caption{
+    color:white;
+    // font-size: 3rem;
+    line-height: 1rem;
+    top:0;
+    left: 0%;
+    right: 0%;
+    bottom:0;
+    // min-width: 100%;
+    max-width: 75%;
+    min-height: auto;
+    background-color:rgba(0, 0, 0, 0.50);
+    // padding-bottom: 25%rem;
+    h1,h2,p{
+      position:relative;
+      top:50%!important;
+      // left:auto;
+      font-size:1rem !important;
+      // padding: 2rsem;
+      text-align: center;
+      // font-family: 'Roboto Thin', Helvetica, sans-serif;
+    }}
+
+  }
+
+  .news{
+    padding: 1rem;
+    // margin: 3rem;
+    // border-top: 1px solid #913597;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100%;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+  }
+
+}

@@ -1,0 +1,46 @@
+<h2>Edit Photos</h2>
+
+<div class="row form-group">
+    <div class="col-md-3" *ngFor="let photo of photos; let i = index">
+        <h3>Photo {{ i + 1 }}</h3>
+        <label >URL: <input class="form-control" [(ngModel)]="photo.url" name="url{{i}}"></label>
+        <label>Mobile URL: <input class="form-control" [(ngModel)]="photo.mobUrl" name="mobUrl{{i}}"></label>
+        <label>Title: <input class="form-control" [(ngModel)]="photo.title" name="title{{i}}"></label>
+        <label>Text: <input class="form-control" [(ngModel)]="photo.text" name="text{{i}}"></label>
+        <label>Button Text: <input class="form-control" [(ngModel)]="photo.btnText" name="btnText{{i}}"></label>
+        <label>Button URL: <input  class="form-control" [(ngModel)]="photo.btnURL" name="btnURL{{i}}"></label><hr>
+    </div>
+</div>
+    
+<h2>Edit Gigs</h2>
+<div class="row form-group">
+
+    <div class="col-md-3" *ngFor="let gig of gigs; let j = index">
+        <h3>Gig {{ j + 1 }}</h3>
+        <label>City: <input class="form-control" [(ngModel)]="gig.city" name="city{{j}}"></label><br>
+        <label>Opening Band: <input class="form-control" [(ngModel)]="gig.openningBand" name="openningBand{{j}}"></label><br>
+        <label>Date: <input class="form-control" [(ngModel)]="gig.date" name="date{{j}}" type="date"></label><br>
+        <label>Time: <input class="form-control" [(ngModel)]="gig.time" name="time{{j}}" type="time"></label><br>
+        <label>Venue: <input class="form-control" [(ngModel)]="gig.venue" name="venue{{j}}"></label><br>
+        <label>Booking URL: <input class="form-control" [(ngModel)]="gig.bookUrl" name="bookUrl{{j}}"></label><br>
+        <label>Map URL: <input class="form-control" [(ngModel)]="gig.mapUrl" name="mapUrl{{j}}"></label><br><hr>
+        <button (click)="deleteGig(j)">Delete</button>
+    </div>
+</div>
+
+
+<h2>Add New Gig</h2>
+<div>
+  <label>City: <input class="form-control" [(ngModel)]="newGig.city" name="newCity"></label><br>
+  <label>Opening Band: <input class="form-control" [(ngModel)]="newGig.openningBand" name="newBand"></label><br>
+  <label>Date: <input class="form-control" [(ngModel)]="newGig.date" name="newDate" type="date"></label><br>
+  <label>Time: <input class="form-control" [(ngModel)]="newGig.time" name="newTime" type="time"></label><br>
+  <label>Venue: <input class="form-control" [(ngModel)]="newGig.venue" name="newVenue"></label><br>
+  <label>Booking URL: <input class="form-control" [(ngModel)]="newGig.bookUrl" name="newBookUrl"></label><br>
+  <label>Map URL: <input class="form-control" [(ngModel)]="newGig.mapUrl" name="newMapUrl"></label><br>
+  <button class="btn btn-themed" (click)="addGig()" [disabled]="!isNewGigValid()">Add Gig</button>
+</div>
+
+<button class="btn btn-success" (click)="saveEverything()">
+    Save everything
+</button>

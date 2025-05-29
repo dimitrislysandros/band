@@ -1,6 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Gig } from 'src/app/interfaces/event';
 import { StaticDataService } from 'src/app/services/static-data.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-events',
@@ -9,7 +11,7 @@ import { StaticDataService } from 'src/app/services/static-data.service';
 })
 export class EventsComponent implements OnInit {
   gigs  :Gig[]=[];
-  constructor(private staticDataService:StaticDataService) { }
+  constructor(private staticDataService:StaticDataService, private http: HttpClient) { }
 
   ngOnInit(): void {
     this.getGigs();
@@ -17,7 +19,7 @@ export class EventsComponent implements OnInit {
 
 
   getGigs(){
-    this.gigs=this.staticDataService.getGigs();
+    this.http.get<Gig[]>(`${environment.apiUrl}/gigs`).subscribe(data => this.gigs = data);
   }
 
 }
