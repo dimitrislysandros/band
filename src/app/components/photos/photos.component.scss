@@ -86,11 +86,10 @@
       }
       a{
         position: absolute;
-        top:60%;
+        bottom:0;
         left:20%;
         font-size: 8vh;
         z-index: 999;
-        font-family: 'DELIRIUM_NEON';
       }
 
     }
@@ -228,7 +227,16 @@ h1, h2, h3 {
       // padding: 2rsem;
       text-align: center;
       // font-family: 'Roboto Thin', Helvetica, sans-serif;
-    }}
+    }
+    a{
+        position: relative;
+        // bottom:0;
+        // left:20%;
+        font-size: 1vh;
+        z-index: 999;
+        max-width: 100%;
+      }
+  }
 
   }
 
