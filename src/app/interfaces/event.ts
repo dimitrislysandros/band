@@ -1,5 +1,5 @@
 export interface Gig{
-  
+  id:string;
   city: string;
   text?: string;
   date: string;

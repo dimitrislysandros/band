@@ -68,17 +68,6 @@ h4{
 html, body { height: 100%; }
 // body { margin: 0; font-family:'ayuga_demoregular'}
 
-
-
-@media (max-width:770px){
-.bg-image{
-  height: 100%;
-}
-.main-container{
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-}
 .btn.btn-themed{
   // background-color: #913597 !important;
   color:#913597 !important;
@@ -86,4 +75,26 @@ html, body { height: 100%; }
   
   border-radius: 3rem;
   font-family: 'DELIRIUM_NEON';
+  font-size: 5vh;
+}
+
+@media (max-width:1300px){
+.bg-image{
+  height: 100%;
+  width: auto;
+}
+.main-container{
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.btn.btn-themed{
+  // background-color: #913597 !important;
+  color:#913597 !important;
+  border: 5px solid #913597;
+  
+  border-radius: 3rem;
+  font-family: 'DELIRIUM_NEON';
+  font-size: 3vh;
+}
 }

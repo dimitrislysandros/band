@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
 import { Gig } from 'src/app/interfaces/event';
 import { Photo } from 'src/app/interfaces/photos';
+import { FirestoreService } from 'src/app/services/firestore.service';
 import { StaticDataService } from 'src/app/services/static-data.service';
 import { environment } from 'src/environments/environment';
 
@@ -19,6 +18,7 @@ export class AdminFormComponent implements OnInit {
   photos: Photo[]=[];
   // adminForm=NgForm;
  newGig: Gig = {
+    id:crypto.subtle.generateKey.toString(),
     city: '',
     openningBand: '',
     date: '',
@@ -29,24 +29,25 @@ export class AdminFormComponent implements OnInit {
   };
 
 
-  constructor(private staticDataService:StaticDataService, private http: HttpClient) { 
+  constructor(private fireStoreService:FirestoreService, private http: HttpClient) { 
   }
 
   ngOnInit(): void {
     this.getEverything();
   }
   getEverything(){
-    this.http.get<Gig[]>(`${environment.apiUrl}/gigs`).subscribe(data => this.gigs = data);
-    this.http.get<Photo[]>(`${environment.apiUrl}/photos`).subscribe(data => this.photos = data);
-
+    this.fireStoreService.getGigs().subscribe(data=> this.gigs=data);
+    this.fireStoreService.getPhotos().subscribe(data=> this.photos=data);
   }
 
 
   addGig() {
     // Optional: validate fields here
-    this.gigs.push({ ...this.newGig }); // push a copy of the newGig object
+    this.fireStoreService.addGig(this.newGig);
+    // this.gigs.push({ ...this.newGig }); // push a copy of the newGig object
     // Clear the form
     this.newGig = {
+      id:'',
       city: '',
       openningBand: '',
       date: '',
@@ -57,8 +58,9 @@ export class AdminFormComponent implements OnInit {
     };
   }
 
-  deleteGig(index: number) {
-  this.gigs.splice(index, 1);
+  deleteGig(index: string) {
+    this.fireStoreService.deleteGig(index);
+  // this.gigs.splice(index, 1);
 }
 
 isNewGigValid(): boolean {
@@ -67,13 +69,14 @@ isNewGigValid(): boolean {
 }
 
 saveEverything(){
-   this.http.post(`${environment.apiUrl}/save-gigs`, this.gigs).subscribe(
-  () => alert('Saved!'),
-  err => console.error('Failed to save gigs', err)
-);
-    this.http.post(`${environment.apiUrl}/save-photos`, this.photos).subscribe(
-  () => alert('Saved!'),
-  err => console.error('Failed to save gigs', err)
-);  }
+//    this.http.post(`${environment.apiUrl}/save-gigs`, this.gigs).subscribe(
+//   () => alert('Saved!'),
+//   err => console.error('Failed to save gigs', err)
+// );
+//     this.http.post(`${environment.apiUrl}/save-photos`, this.photos).subscribe(
+//   () => alert('Saved!'),
+//   err => console.error('Failed to save gigs', err)
+// );  
+}
 
 }

@@ -48,6 +48,7 @@ export class StaticDataService {
     gigs:Gig[]=
     [
       {
+        id:'string',
           city: 'Athens',
   openningBand:'Toyotomi',
   date: '22/10/25',

@@ -24,7 +24,7 @@
         <label>Venue: <input class="form-control" [(ngModel)]="gig.venue" name="venue{{j}}"></label><br>
         <label>Booking URL: <input class="form-control" [(ngModel)]="gig.bookUrl" name="bookUrl{{j}}"></label><br>
         <label>Map URL: <input class="form-control" [(ngModel)]="gig.mapUrl" name="mapUrl{{j}}"></label><br><hr>
-        <button (click)="deleteGig(j)">Delete</button>
+        <button (click)="deleteGig(gig.id)">Delete</button>
     </div>
 </div>
 
@@ -41,6 +41,3 @@
   <button class="btn btn-themed" (click)="addGig()" [disabled]="!isNewGigValid()">Add Gig</button>
 </div>
 
-<button class="btn btn-success" (click)="saveEverything()">
-    Save everything
-</button>

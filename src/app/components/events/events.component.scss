@@ -22,7 +22,7 @@ h3{
 color: #913597;
   padding: 1rem;
     font-family:'DELIRIUM_NEON', Courier, monospace;
-    font-size: 13vh;
+    font-size: 10vh;
 }
     margin-top:5rem;
     vertical-align: middle;
@@ -46,7 +46,14 @@ span{
 
 @media (max-width:1300px){
 
+  h3{
+    font-size: 5vh !important;
+  }
+
   h5{
     font-size: 4vh;
+  }
+  p{
+    font-size: 2vh;
   }
 }

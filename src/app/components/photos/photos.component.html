@@ -3,7 +3,7 @@
 <div class="news" >
 
   <ngb-carousel >
-    <ng-template ngbSlide *ngFor="let photo of photos">
+    <ng-template ngbSlide *ngFor="let photo of photos ">
       <div class="picsum-img-wrapper ">
         <img class="first-image" [src]="isPhoneScreen?photo.mobUrl:photo.url" alt="Welcome to my Jam" />
       </div>
