@@ -47,6 +47,10 @@
       transition: opacity 0.15s ease;
 
   }
+  ::ng-deep .carousel-indicators{
+    display: none !important;
+    opacity:0;
+  }
     .bg-black-full{
     }
     .carousel-caption{
@@ -159,16 +163,27 @@ h1, h2, h3 {
 
 
 @media (max-width:1300px){
+   .carousel{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 3rem;
+    // border:1px white solid;
+    
+    .picsum-img-wrapper img{
+    justify-content: center;
+    width: 100% !important;
+    }
   .carousel-caption{
     h1,h2,p{
       top: 10% !important;;
       font-size: 2rem ;
     }
     a {
-
+position: absolute;
       font-size: 4vh !important;
+      bottom: 10px;
     }
-  }
+  }}
 }
 
 @media (max-width:850px){
