@@ -176,12 +176,15 @@ h1, h2, h3 {
   .carousel-caption{
     h1,h2,p{
       top: 10% !important;;
-      font-size: 2rem ;
+      font-size: 6vh!important;
+      padding: 1rem;
     }
     a {
-position: absolute;
-      font-size: 4vh !important;
-      bottom: 10px;
+        position: absolute;
+          font-size: 4vh !important;
+        bottom: 10px;
+        left:0;
+        right: 20%;
     }
   }}
 }
