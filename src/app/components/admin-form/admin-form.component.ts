@@ -65,18 +65,18 @@ export class AdminFormComponent implements OnInit {
 
 isNewGigValid(): boolean {
   const g = this.newGig;
-  return !!(g.city && g.openningBand && g.date && g.time && g.venue && g.bookUrl && g.mapUrl);
+  return !!(g.city && g.openningBand && g.date && g.time && g.venue && g.mapUrl);
 }
 
 saveEverything(){
-//    this.http.post(`${environment.apiUrl}/save-gigs`, this.gigs).subscribe(
-//   () => alert('Saved!'),
-//   err => console.error('Failed to save gigs', err)
-// );
-//     this.http.post(`${environment.apiUrl}/save-photos`, this.photos).subscribe(
-//   () => alert('Saved!'),
-//   err => console.error('Failed to save gigs', err)
-// );  
+   this.http.post(`${environment.apiUrl}/save-gigs`, this.gigs).subscribe(
+  () => alert('Saved!'),
+  err => console.error('Failed to save gigs', err)
+);
+    this.http.post(`${environment.apiUrl}/save-photos`, this.photos).subscribe(
+  () => alert('Saved!'),
+  err => console.error('Failed to save gigs', err)
+);  
 }
 
 }

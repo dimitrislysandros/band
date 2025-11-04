@@ -1,0 +1,49 @@
+.navbar-left {
+    position: fixed;
+    left:0;
+    bottom:1rem;
+    // align-items: center;
+  // text-align: center;
+  // justify-content: center;
+  
+  .nav-item {
+    margin: 1rem;
+    border: #913597 2px solid;
+    border-radius:3rem;
+    :hover{
+      color: white;
+    }
+  }
+  .nav-item.active a{
+    color:#913597;
+  }
+  li {
+    a {
+      color: #913597;
+  font-size: 6vh;
+  padding:1rem;
+  font-display: auto;    
+    font-family:'DELIRIUM_NEON', Courier, monospace !important;
+    }
+    
+  }
+  .navbar-form.navbar-center {
+    float: none;
+    text-align: center;
+  }
+  i{
+
+     color: #913597;
+  }
+}
+
+
+@media (max-width:850px){
+    a {
+      color: #913597;
+  font-size: 4vh;
+  padding:1rem;
+  font-display: auto;    
+    font-family:'DELIRIUM_NEON', Courier, monospace !important;
+    }
+}

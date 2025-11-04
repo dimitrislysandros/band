@@ -4,9 +4,9 @@
 nav {
   //  background-color: black;
   position: relative;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+  // align-items: center;
+  // text-align: center;
+  // justify-content: center;
   
   .nav-item {
     margin: 1rem;
@@ -36,19 +36,10 @@ nav {
 
      color: #913597;
   }
-
-
+  
 }
 
-a.navbar-brand {
-font-size: 1rem;
-    font-family:'DELIRIUM', Courier, monospace !important;
 
-    text-decoration: none;
-
-    // color:#913597;
-
-}
 
 .btn.btn-themed{
 font-size: 2rem;

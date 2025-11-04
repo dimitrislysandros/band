@@ -1,8 +1,22 @@
 <!-- <h1 class="">About</h1> -->
 
-<div class="news" >
+<div class="news">
+  <iframe
+    width="100%"
+    height="400"
+    src="https://www.youtube.com/embed/8a3KXn7aRWU?si=EQAktysJAOxAvH3Q?autoplay=1&mute=1&origin=http://jimmylimusic.com"
+    
+    frameborder="0"
+    allow=" autoplay; gyroscope; mute"
+    referrerpolicy="strict-origin-when-cross-origin"
+    mute=1
+    autoplay=1 
+    enablejsapi=1
+    iv_load_policy=3
+    
+  ></iframe>
 
-  <ngb-carousel >
+  <!-- <ngb-carousel >
     <ng-template ngbSlide *ngFor="let photo of photos ">
       <div class="picsum-img-wrapper ">
         <img class="first-image" [src]="isPhoneScreen?photo.mobUrl:photo.url" alt="Welcome to my Jam" />
@@ -41,12 +55,9 @@
         <h1>{{captions[6]}}</h1>
         <p>{{captions[3]}}</p>
       </div>
-    </ng-template> -->
-  </ngb-carousel>
-  
+    </ng-template>   </ngb-carousel>
+   -->
 
-
-<app-events></app-events>
-<ng-template #NoNews>
-No News
-</ng-template>
+  <app-events></app-events>
+  <ng-template #NoNews> No News </ng-template>
+</div>

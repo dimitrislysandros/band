@@ -5,25 +5,35 @@
 
 .row{
   padding: 1rem;
-  // background-color: white;
+  background-color: white;
   border-top: 1px white solid;
   line-height: 100%;
   // vertical-align: middle;
   // justify-content: center;
-  .col{
+  background-color: wheat;
+  .col-md-3{
     justify-self:center;
     justify-content: center;
     align-self:center;
     vertical-align: middle;
+    border-right: 1px black solid;
+    color: black;
+    p{
+      font-size: 6vh;
+      line-height: 6vh;
+    }
+    a{
+      font-size: 6vh;
+      // text-decoration: none;
+      color:#913597;
+      :hover{
+        color:white;
+      }
+    }
   }
 }
 
-h3{
-color: #913597;
-  padding: 1rem;
-    font-family:'DELIRIUM_NEON', Courier, monospace;
-    font-size: 10vh;
-}
+
     margin-top:5rem;
     vertical-align: middle;
     align-content: center-;
@@ -33,11 +43,16 @@ h5{
     font-size: 8vh;
     color:white;
 }
-
+h3{
+color: #913597;
+  padding: 1rem;
+    font-family:'DELIRIUM_NEON', Courier, monospace;
+    font-size: 10vh;
+}
 p{
   
     font-family:'Courier', monospace;
-  font-size: 5vh;
+  font-size: 10vh;
 }
 span{
   font-family:'Courier', monospace;
@@ -47,7 +62,7 @@ span{
 @media (max-width:1300px){
 
   h3{
-    font-size: 5vh !important;
+    font-size: 10vh !important;
   }
 
   h5{

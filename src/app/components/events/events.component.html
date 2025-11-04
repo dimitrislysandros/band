@@ -1,51 +1,43 @@
-<hr>
+<hr />
 
-<div id="events" >
-    
-    <h3 class="p-2 ">Events</h3>
-    <div *ngIf="gigs.length>0; else NoGigs">
-        <div class="row" *ngFor="let gig of gigs" >
-            <div class="col-md-3"> 
-                <p>
+<div id="events">
+  <h3 class="p-2">Events</h3>
+  <div *ngIf="gigs.length > 0; else NoGigs">
+    <div class="row" *ngFor="let gig of gigs">
+      <div class="col-md-3">
+        <p>
+          {{ gig.date }}
+        </p>
+      </div>
+      <div class="col-md-3">
+        <p>
+          {{ gig.city }}
+        </p>
+      </div>
+      <div class="col-md-3">
+        <p>
+            <a href="{{gig.mapUrl}}" target="_blank">
 
-                    {{gig.date}}
-                </p>
-            </div>
-            <div class="col-md-3"> 
-            <p>
+                {{ gig.venue }}
+            </a>
 
-                {{gig.city}}
-            </p>
-            
-            </div>
-            <div class="col-md-3"> 
-                <p>
+        </p>
+        <br />
+        <p>
+          w/
 
-                    {{gig.venue}}
-                </p>
-                <br>
-                <p>
-
-                    w/
-                    
-                     {{gig.openningBand}}
-                </p>
-            </div>
-            <div class="col-md-3">
-                <a href='{{gig.bookUrl}}' class="btn btn-themed">Book</a>
-            </div>
-        
-        </div>
-    
+          {{ gig.openningBand }}
+        </p>
+      </div>
+      <div class="col-md-3" *ngIf="gig.bookUrl">
+        <a href="{{ gig.bookUrl }}" class="btn btn-themed">Book</a>
+      </div>
     </div>
+  </div>
 </div>
 
-
 <ng-template #NoGigs>
-    <div class="p-5">
-
-         <h5>
-            No upcoming events
-         </h5>
-    </div>
+  <div class="p-5">
+    <h5>No upcoming events</h5>
+  </div>
 </ng-template>

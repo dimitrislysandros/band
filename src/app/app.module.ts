@@ -19,6 +19,8 @@ import { SongsComponent } from "./components/songs/songs.component";
 import { MaterialExampleModule } from "src/material.module";
 import { provideFirebaseApp } from '@angular/fire/app';
 import { provideFirestore } from '@angular/fire/firestore';
+import { NavbarLeftComponent } from './components/navbar-left/navbar-left.component';
+import { FooterRightComponent } from './components/footer-right/footer-right.component';
 
 
 
@@ -33,7 +35,9 @@ import { provideFirestore } from '@angular/fire/firestore';
     SongsComponent,
     PhotosComponent,
     EventsComponent,
-    AdminFormComponent
+    AdminFormComponent,
+    NavbarLeftComponent,
+    FooterRightComponent
   ],
   imports: [
     BrowserModule,
