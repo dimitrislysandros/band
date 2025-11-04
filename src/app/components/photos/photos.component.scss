@@ -2,7 +2,23 @@
   opacity: 0!important;
 }
 
+.video-container {
+  margin-top: 2rem;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  background: black; /* optional, hides any letterboxing */
+}
 
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
 .news{
   padding: 1rem;
@@ -280,4 +296,7 @@ h1, h2, h3 {
 
   }
 
+  .video-player{
+
+  }
 }

@@ -2,13 +2,17 @@
   position: fixed;
   left: 0;
   bottom: 1rem;
-  // align-items: center;
-  // text-align: center;
-  // justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  z-index: 999999999;
+  .navbar-custom{
+
+    list-style: none;
+  }
 
   .nav-item {
     margin: 1rem;
-    // border: #913597 2px solid;
     border-radius: 3rem;
     :hover {
       color: white;
@@ -36,17 +40,26 @@
 }
 
 @media (max-width: 850px) {
-  .navbar-left {
-    position: fixed;
-    left: 0;
-    top: 1rem;
-
-    a {
-      color: #913597;
-      font-size: 5vh;
-      padding: 1rem;
-      font-display: auto;
-      font-family: "DELIRIUM_NEON", Courier, monospace !important;
-    }
+  
+    .navbar-left {
+      width:100%;
+      position: relative;
+      // left: 0;
+      top: 17%;
+      bottom:auto;
+      z-index: 99999999;
+      ul.navbar-custom{
+        display: inline-flex;
+        padding-left: 0;
+        a {
+          color: #913597;
+          font-size: 4vh;
+          padding: 1rem;
+          font-display: auto;
+          font-family: "DELIRIUM_NEON", Courier, monospace !important;
+        }
+      }
+     
+    
   }
 }
