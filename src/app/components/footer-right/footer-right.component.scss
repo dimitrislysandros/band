@@ -31,7 +31,7 @@ position:fixed;
 border-top-left-radius: 0;
 border-top-right-radius: 0;
   font-size: 6vh;
-background-color: rgba(0,0,0,0.6);
+// background-color: rgba(0,0,0,0.6);
 border-radius: 3rem;
  }
 
@@ -39,8 +39,8 @@ border-radius: 3rem;
 @media (max-width:850px){
  .footer-icons{
 
-  // top:70%;
-  right:1rem;
+  top:1rem;
+  right:0;
   // right:10%;
   // font-size: 3rem;
   max-width: 4rem;
