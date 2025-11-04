@@ -8,7 +8,7 @@
   
   .nav-item {
     margin: 1rem;
-    border: #913597 2px solid;
+    // border: #913597 2px solid;
     border-radius:3rem;
     :hover{
       color: white;
@@ -20,7 +20,7 @@
   li {
     a {
       color: #913597;
-  font-size: 6vh;
+  font-size: 5vh;
   padding:1rem;
   font-display: auto;    
     font-family:'DELIRIUM_NEON', Courier, monospace !important;
@@ -41,7 +41,7 @@
 @media (max-width:850px){
     a {
       color: #913597;
-  font-size: 4vh;
+  font-size: 5vh;
   padding:1rem;
   font-display: auto;    
     font-family:'DELIRIUM_NEON', Courier, monospace !important;
