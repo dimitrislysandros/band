@@ -14,7 +14,7 @@ urls = {
     itunes:'https://music.apple.com/gr/artist/jimmy-li/1247695157',
     deezer:'https://www.deezer.com/us/artist/78864562',
     soundcloud:'https://soundcloud.com/user-191606160',
-    bandcamp:'jimmyli.bandcamp.com'
+    bandcamp:'https://jimmyli.bandcamp.com/track/to-the-front'
   };
   constructor() { }
 

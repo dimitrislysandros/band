@@ -12,22 +12,26 @@
   }
 
   .nav-item {
-    margin: 1rem;
+    margin: 4vh;
+    min-height: 10vh;
     border-radius: 3rem;
     :hover {
       color: white;
     }
   }
   .nav-item.active a {
-    color: #913597;
+    color: wheat;
   }
   li {
     a {
       color: #913597;
       font-size: 5vh;
-      padding: 1rem;
+      padding: 2vh;
       font-display: auto;
       font-family: "DELIRIUM_NEON", Courier, monospace !important;
+      :hover {
+      color: white;
+    }
     }
   }
   .navbar-form.navbar-center {
@@ -54,9 +58,12 @@
         a {
           color: #913597;
           font-size: 4vh;
-          padding: 1rem;
+          padding: 4vh;
           font-display: auto;
           font-family: "DELIRIUM_NEON", Courier, monospace !important;
+          :hover{
+            color:white;
+          }
         }
       }
      
