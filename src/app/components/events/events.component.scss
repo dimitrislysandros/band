@@ -6,12 +6,12 @@
 .row{
   padding: 1rem;
   // background-color: #f3f4ff;
-  border-top: 1px f3f4ff solid;
+  border-top: 3px #717274   dashed;
   line-height: 100%;
   // vertical-align: middle;
   // justify-content: center;
   // background-color: rgba(255, 245, 245, 0.1);
-  .col-md-3{
+  .col-md-3, .col-md-5, .col-md-2{
     justify-self:center;
     justify-content: center;
     align-self:center;
@@ -19,7 +19,7 @@
     // border-right: 1px #f3f4ff solid;
     color: #f3f4ff;
     p{
-      font-size: 6vh;
+      font-size: 4vh;
       line-height: 6vh;
     }
     a{

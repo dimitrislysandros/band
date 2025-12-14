@@ -6,15 +6,14 @@
     <div class="row" *ngFor="let gig of gigs">
       <div class="col-md-3">
         <p>
-          {{ gig.date }}
+
+          {{ gig.date }} 
+          <br>
+          {{gig.time}}
         </p>
+        
       </div>
-      <div class="col-md-3">
-        <p>
-          {{ gig.city }}
-        </p>
-      </div>
-      <div class="col-md-3">
+      <div class="col-md-5">
         <p>
           <a href="{{ gig.mapUrl }}" target="_blank">
             {{ gig.venue }}
@@ -29,7 +28,12 @@
           </span>
         </p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-2">
+        <p>
+          {{ gig.city }}
+        </p>
+      </div>
+      <div class="col-md-2">
         <a *ngIf="gig.bookUrl" href="{{ gig.bookUrl }}" class="btn btn-themed" matTooltip="Tickets Here" matTooltipPosition="above"
           ><i class="fa-solid fa-ticket"></i></a
         >
