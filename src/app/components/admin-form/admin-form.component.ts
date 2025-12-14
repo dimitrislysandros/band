@@ -10,36 +10,34 @@ import { environment } from 'src/environments/environment';
   selector: 'app-admin-form',
   templateUrl: './admin-form.component.html',
   styleUrls: ['./admin-form.component.scss'],
-  
 })
 export class AdminFormComponent implements OnInit {
-  
-   gigs  :Gig[]=[];
-  photos: Photo[]=[];
+  gigs: Gig[] = [];
+  photos: Photo[] = [];
   // adminForm=NgForm;
- newGig: Gig = {
-    id:crypto.subtle.generateKey.toString(),
+  newGig: Gig = {
+    id: crypto.subtle.generateKey.toString(),
     city: '',
     openningBand: '',
     date: '',
     time: '',
     venue: '',
     bookUrl: '',
-    mapUrl: ''
+    mapUrl: '',
   };
 
-
-  constructor(private fireStoreService:FirestoreService, private http: HttpClient) { 
-  }
+  constructor(
+    private fireStoreService: FirestoreService,
+    private http: HttpClient
+  ) {}
 
   ngOnInit(): void {
     this.getEverything();
   }
-  getEverything(){
-    this.fireStoreService.getGigs().subscribe(data=> this.gigs=data);
-    this.fireStoreService.getPhotos().subscribe(data=> this.photos=data);
+  getEverything() {
+    this.fireStoreService.getGigs().subscribe((data) => (this.gigs = data));
+    this.fireStoreService.getPhotos().subscribe((data) => (this.photos = data));
   }
-
 
   addGig() {
     // Optional: validate fields here
@@ -47,7 +45,7 @@ export class AdminFormComponent implements OnInit {
     // this.gigs.push({ ...this.newGig }); // push a copy of the newGig object
     // Clear the form
     this.newGig = {
-      id:'',
+      id: '',
       city: '',
       openningBand: '',
       date: '',
@@ -58,26 +56,27 @@ export class AdminFormComponent implements OnInit {
       picture: '',
     };
   }
-
+  updateGig(id: string, gig: any) {
+    this.fireStoreService.updateGig(id,gig);
+  }
   deleteGig(index: string) {
     this.fireStoreService.deleteGig(index);
-  // this.gigs.splice(index, 1);
-}
+    // this.gigs.splice(index, 1);
+  }
 
-isNewGigValid(): boolean {
-  const g = this.newGig;
-  return !!(g.city && g.date && g.time && g.venue && g.mapUrl);
-}
+  isNewGigValid(): boolean {
+    const g = this.newGig;
+    return !!(g.city && g.date && g.time && g.venue && g.mapUrl);
+  }
 
-saveEverything(){
-   this.http.post(`${environment.apiUrl}/save-gigs`, this.gigs).subscribe(
-  () => alert('Saved!'),
-  err => console.error('Failed to save gigs', err)
-);
+  saveEverything() {
+    this.http.post(`${environment.apiUrl}/save-gigs`, this.gigs).subscribe(
+      () => alert('Saved!'),
+      (err) => console.error('Failed to save gigs', err)
+    );
     this.http.post(`${environment.apiUrl}/save-photos`, this.photos).subscribe(
-  () => alert('Saved!'),
-  err => console.error('Failed to save gigs', err)
-);  
-}
-
+      () => alert('Saved!'),
+      (err) => console.error('Failed to save gigs', err)
+    );
+  }
 }
