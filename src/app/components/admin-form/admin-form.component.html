@@ -17,6 +17,8 @@
 
     <div class="col-md-3" *ngFor="let gig of gigs; let j = index">
         <h3>Gig {{ j + 1 }}</h3>
+        <label>Picture: <input class="form-control" [(ngModel)]="gig.picture" name="picture{{j}}"></label><br>
+        
         <label>City: <input class="form-control" [(ngModel)]="gig.city" name="city{{j}}"></label><br>
         <label>Opening Band: <input class="form-control" [(ngModel)]="gig.openningBand" name="openningBand{{j}}"></label><br>
         <label>Date: <input class="form-control" [(ngModel)]="gig.date" name="date{{j}}" type="date"></label><br>
@@ -31,6 +33,8 @@
 
 <h2>Add New Gig</h2>
 <div>
+   
+  <label>Picture: <input class="form-control" [(ngModel)]="newGig.picture" name="newPicture"></label><br> 
   <label>City: <input class="form-control" [(ngModel)]="newGig.city" name="newCity"></label><br>
   <label>Opening Band: <input class="form-control" [(ngModel)]="newGig.openningBand" name="newBand"></label><br>
   <label>Date: <input class="form-control" [(ngModel)]="newGig.date" name="newDate" type="date"></label><br>

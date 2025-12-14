@@ -5,19 +5,19 @@
 
 .row{
   padding: 1rem;
-  background-color: white;
-  border-top: 1px white solid;
+  // background-color: #f3f4ff;
+  border-top: 1px f3f4ff solid;
   line-height: 100%;
   // vertical-align: middle;
   // justify-content: center;
-  background-color: wheat;
+  // background-color: rgba(255, 245, 245, 0.1);
   .col-md-3{
     justify-self:center;
     justify-content: center;
     align-self:center;
     vertical-align: middle;
-    border-right: 1px black solid;
-    color: black;
+    // border-right: 1px #f3f4ff solid;
+    color: #f3f4ff;
     p{
       font-size: 6vh;
       line-height: 6vh;

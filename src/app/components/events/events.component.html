@@ -1,7 +1,7 @@
 <hr />
 
-<div id="events">
-  <h3 class="p-2">Events</h3>
+<div id="events" class="container">
+  <h3 class="p-2">Gigs</h3>
   <div *ngIf="gigs.length > 0; else NoGigs">
     <div class="row" *ngFor="let gig of gigs">
       <div class="col-md-3">
@@ -16,21 +16,24 @@
       </div>
       <div class="col-md-3">
         <p>
-            <a href="{{gig.mapUrl}}" target="_blank">
-
-                {{ gig.venue }}
-            </a>
-
+          <a href="{{ gig.mapUrl }}" target="_blank">
+            {{ gig.venue }}
+          </a>
         </p>
         <br />
         <p>
-          w/
+          <span *ngIf="gig.openningBand">
+            w/
 
-          {{ gig.openningBand }}
+            {{ gig.openningBand }}
+          </span>
         </p>
       </div>
-      <div class="col-md-3" *ngIf="gig.bookUrl">
-        <a href="{{ gig.bookUrl }}" class="btn btn-themed">Book</a>
+      <div class="col-md-3">
+        <a *ngIf="gig.bookUrl" href="{{ gig.bookUrl }}" class="btn btn-themed" matTooltip="Tickets Here" matTooltipPosition="above"
+          ><i class="fa-solid fa-ticket"></i></a
+        >
+        <button class="btn btn-themed" (click)="addToCalendarAuto(gig)" matTooltip="Add To Calendar" matTooltipPosition="above"><i class="fa-regular fa-calendar-plus"></i></button>
       </div>
     </div>
   </div>
@@ -38,6 +41,6 @@
 
 <ng-template #NoGigs>
   <div class="p-5">
-    <h5>No upcoming events</h5>
+    <h5>No upcoming gigs scheduled</h5>
   </div>
 </ng-template>

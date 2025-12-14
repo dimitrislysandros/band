@@ -54,7 +54,8 @@ export class AdminFormComponent implements OnInit {
       time: '',
       venue: '',
       bookUrl: '',
-      mapUrl: ''
+      mapUrl: '',
+      picture: '',
     };
   }
 
@@ -65,7 +66,7 @@ export class AdminFormComponent implements OnInit {
 
 isNewGigValid(): boolean {
   const g = this.newGig;
-  return !!(g.city && g.openningBand && g.date && g.time && g.venue && g.mapUrl);
+  return !!(g.city && g.date && g.time && g.venue && g.mapUrl);
 }
 
 saveEverything(){

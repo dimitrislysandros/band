@@ -8,4 +8,5 @@ export interface Gig{
   openningBand: string;
   bookUrl?: string;
   mapUrl?: string;
+  picture?:string;
 }
