@@ -19,7 +19,7 @@ export class UtilityService {
 BEGIN:VCALENDAR
 VERSION:2.0
 BEGIN:VEVENT
-SUMMARY:${event.city} – Live at ${event.venue}
+SUMMARY:Jimmy Li – Live at ${event.venue}
 DTSTART:${start}
 DTEND:${end}
 LOCATION:${event.venue}
@@ -88,7 +88,7 @@ END:VCALENDAR
     const start = this.toCalendarDate(event.date, event.time);
     const end = this.toCalendarDate(event.date, event.time, 120); // +2 hours
 
-    const title = encodeURIComponent(`${event.city} – Live at ${event.venue}`);
+    const title = encodeURIComponent(`Jimmy Li – Live at ${event.venue}`);
     const details = encodeURIComponent(`Opening band: ${event.openningBand}`);
     const location = encodeURIComponent(event.venue);
 
