@@ -32,6 +32,21 @@ export class EventsComponent implements OnInit {
   addToCalendarAuto(event: Gig) {
   if (this.isAppleDevice()) {
     const icsUrl = this.utility.generateICS(event);
+    const icsContent = this.utility.generateICS(event);
+     const blob = new Blob([icsContent], {
+      type: 'text/calendar;charset=utf-8'
+    });
+
+    const url = URL.createObjectURL(blob);
+
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = this.utility.buildICSFilename(event);
+    a.click();
+
+    URL.revokeObjectURL(url);
+
     window.location.href = icsUrl;
   } else {
     const googleUrl = this.utility.addToCalendar(event, 'google');
