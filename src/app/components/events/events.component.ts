@@ -53,4 +53,11 @@ export class EventsComponent implements OnInit {
     window.open(googleUrl, '_blank');
   }
 }
+
+splitGigDate(dateString:string){
+
+  var stringAr=dateString.split("-");
+  dateString=stringAr[2]+"/"+stringAr[1];
+  return dateString;
+}
 }

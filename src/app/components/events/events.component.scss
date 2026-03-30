@@ -1,74 +1,95 @@
-
-
-
-#events{
-
-.row{
-  padding: 1rem;
-  // background-color: #f3f4ff;
-  border-top: 3px #717274   dashed;
-  line-height: 100%;
-  // vertical-align: middle;
-  // justify-content: center;
-  // background-color: rgba(255, 245, 245, 0.1);
-  .col-md-3, .col-md-5, .col-md-2{
-    justify-self:center;
-    justify-content: center;
-    align-self:center;
-    vertical-align: middle;
-    // border-right: 1px #f3f4ff solid;
-    color: #f3f4ff;
-    p{
-      font-size: 4vh;
-      line-height: 6vh;
-    }
-    a{
-      font-size: 6vh;
-      // text-decoration: none;
-      color:#913597;
-      :hover{
-        color:white;
+#events {
+  .row {
+    padding: 1rem;
+    // background-color: #f3f4ff;
+    border-top: 3px #717274 dashed;
+    line-height: 100%;
+    // vertical-align: middle;
+    // justify-content: center;
+    // background-color: rgba(255, 245, 245, 0.1);
+    .col-md-3,
+    .col-md-4,
+    .col-md-2 {
+      justify-self: center;
+      justify-content: center;
+      align-self: center;
+      vertical-align: middle;
+      // border-right: 1px #f3f4ff solid;
+      color: #f3f4ff;
+      p {
+        font-size: 4vh;
+        line-height: 6vh;
+      }
+      a {
+        font-size: 4vh;
+        // text-decoration: none;
+        color: #913597;
+        :hover {
+          color: white;
+        }
       }
     }
   }
-}
 
-
-    margin-top:5rem;
-    vertical-align: middle;
-    align-content: center;
+  margin-top: 5rem;
+  vertical-align: middle;
+  align-content: center;
 }
-h5{
-    font-family:'DELIRIUM', Courier, monospace;
-    font-size: 8vh;
-    color:white;
+h5 {
+  font-family: "DELIRIUM", Courier, monospace;
+  font-size: 8vh;
+  color: white;
 }
-h3{
-color: #913597;
+h3 {
+  color: #913597;
   padding: 1rem;
-    font-family:'DELIRIUM_NEON', Courier, monospace;
-    font-size: 10vh;
+  font-family: "DELIRIUM", Courier, monospace;
+  font-size: 10vh;
 }
-p{
-  
-    font-family:'Courier', monospace;
+p {
+  font-family: "DELIRIUM", monospace;
   font-size: 1vh;
 }
-span{
-  font-family:'Courier', monospace;
+span {
+  font-family: "Roboto", monospace;
   font-size: 3vh;
 }
 
-@media (max-width:1300px){
-
-  h3{
+@media (max-width: 1300px) {
+  h3 {
     font-size: 10vh !important;
   }
 
-  h5{
+  h5 {
     font-size: 4vh;
   }
-  p{
+  p {
     font-size: 2px;
+  }
+
+  #events {
+    .row {
+      padding: 1rem;
+      // background-color: #f3f4ff;
+      border-top: 3px #717274 dashed;
+      line-height: 100%;
+      // vertical-align: middle;
+      // justify-content: center;
+      // background-color: rgba(255, 245, 245, 0.1);
+      .col-md-3,
+      .col-md-5,
+      .col-md-2 {
+       
+        p {
+          font-size: 3vh;
+          line-height: 4vh;
+        }
+        a {
+          font-size: 3vh;
+       
+        }
+      }
+    }
+
   }
 }

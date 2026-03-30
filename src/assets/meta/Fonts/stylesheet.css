@@ -26,10 +26,10 @@
 
 @font-face {
     font-family: 'DELIRIUM';
-    src: url('DELIRIUM NCV.ttf') format('woff2'),
-         url('DELIRIUM NCV.ttf') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    src: url('shagade.ttf') format('woff2'),
+         url('shagade.ttf') format('woff');
+    font-weight: bold;
+    font-style: bold;
 
 }
 

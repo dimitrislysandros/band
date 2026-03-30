@@ -6,15 +6,6 @@
     <div class="row" *ngFor="let gig of gigs">
       <div class="col-md-3">
         <p>
-
-          {{ gig.date }} 
-          <br>
-          {{gig.time}}
-        </p>
-        
-      </div>
-      <div class="col-md-5">
-        <p>
           <a href="{{ gig.mapUrl }}" target="_blank">
             {{ gig.venue }}
           </a>
@@ -23,16 +14,27 @@
         <p>
           <span *ngIf="gig.openningBand">
             w/
-
+  
             {{ gig.openningBand }}
           </span>
         </p>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-3">
         <p>
           {{ gig.city }}
         </p>
       </div>
+      <div class="col-md-4">
+        <p>
+
+          {{ splitGigDate(gig.date) }} 
+          <!-- <br> -->
+|
+          {{gig.time}}
+        </p>
+        
+      </div>
+      
       <div class="col-md-2">
         <a *ngIf="gig.bookUrl" href="{{ gig.bookUrl }}" class="btn btn-themed" matTooltip="Tickets Here" matTooltipPosition="above"
           ><i class="fa-solid fa-ticket"></i></a
