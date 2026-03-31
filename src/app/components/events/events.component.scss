@@ -22,6 +22,7 @@
       }
       a {
         font-size: 4vh;
+        line-height: 6vh;
         // text-decoration: none;
         color: #913597;
         :hover {
@@ -57,14 +58,14 @@ span {
 
 @media (max-width: 1300px) {
   h3 {
-    font-size: 5vh !important;
+    font-size: 4vh !important;
   }
 
   h5 {
-    font-size: 4vh;
+    font-size: 3vh;
   }
   p {
-    font-size: 2px;
+    font-size: 3vh;
   }
 
   #events {
@@ -86,6 +87,7 @@ span {
         }
         a {
           font-size: 3vh;
+          line-height: 4vh;
        
         }
       }
