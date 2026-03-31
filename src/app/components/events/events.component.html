@@ -1,20 +1,20 @@
 <hr />
 
 <div id="events" class="container">
-  <h3 class="p-2">Gigs</h3>
+  <h3 class="m-auto">Gigs</h3>
   <div *ngIf="gigs.length > 0; else NoGigs">
     <div class="row" *ngFor="let gig of gigs">
       <div class="col-md-3">
-        <p>
-          <a href="{{ gig.mapUrl }}" target="_blank">
+        <a href="{{ gig.mapUrl }}" target="_blank">
+          
             {{ gig.venue }}
-          </a>
-        </p>
+          
+        </a>
         <br />
         <p>
           <span *ngIf="gig.openningBand">
             w/
-  
+
             {{ gig.openningBand }}
           </span>
         </p>
@@ -26,20 +26,30 @@
       </div>
       <div class="col-md-4">
         <p>
-
-          {{ splitGigDate(gig.date) }} 
+          {{ splitGigDate(gig.date) }}
           <!-- <br> -->
-|
-          {{gig.time}}
+          |
+          {{ gig.time }}
         </p>
-        
       </div>
-      
+
       <div class="col-md-2">
-        <a *ngIf="gig.bookUrl" href="{{ gig.bookUrl }}" class="btn btn-themed" matTooltip="Tickets Here" matTooltipPosition="above"
-          ><i class="fa-solid fa-ticket"></i></a
+        <a
+          *ngIf="gig.bookUrl"
+          href="{{ gig.bookUrl }}"
+          class="btn btn-themed"
+          matTooltip="Tickets Here"
+          matTooltipPosition="above"
+          ><i class="fa-solid fa-ticket"></i
+        ></a>
+        <button
+          class="btn btn-themed"
+          (click)="addToCalendarAuto(gig)"
+          matTooltip="Add To Calendar"
+          matTooltipPosition="above"
         >
-        <button class="btn btn-themed" (click)="addToCalendarAuto(gig)" matTooltip="Add To Calendar" matTooltipPosition="above"><i class="fa-regular fa-calendar-plus"></i></button>
+          <i class="fa-regular fa-calendar-plus"></i>
+        </button>
       </div>
     </div>
   </div>
