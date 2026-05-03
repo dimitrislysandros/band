@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Gig } from 'src/app/interfaces/event';
 import { StaticDataService } from 'src/app/services/static-data.service';
 import { environment } from 'src/environments/environment';
@@ -13,10 +13,15 @@ import { UtilityService } from 'src/app/services/util.general';
 })
 export class EventsComponent implements OnInit {
   gigs  :Gig[]=[];
-  constructor(private firestoreService:FirestoreService, private http: HttpClient, private utility:UtilityService) { }
+  constructor(private firestoreService:FirestoreService, private http: HttpClient, private utility:UtilityService, private renderer: Renderer2) { }
 
   ngOnInit(): void {
     this.getGigs();
+
+    const script = this.renderer.createElement('script');
+    script.src = 'https://widget.bandsintown.com/main.min.js';
+    script.charset = 'utf-8';
+    this.renderer.appendChild(document.body, script);
   }
 
 

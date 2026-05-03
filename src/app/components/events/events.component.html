@@ -1,62 +1,51 @@
-<hr />
 
-<div id="events" class="container">
-  <h3 class="m-auto">Gigs</h3>
-  <div *ngIf="gigs.length > 0; else NoGigs">
-    <div class="row" *ngFor="let gig of gigs">
-      <div class="col-md-3">
-        <a href="{{ gig.mapUrl }}" target="_blank">
-          
-            {{ gig.venue }}
-          
-        </a>
-        <br />
-        <p>
-          <span *ngIf="gig.openningBand">
-            w/
+  <div class="container">
+    <h1>GIGS</h1>
 
-            {{ gig.openningBand }}
-          </span>
-        </p>
-      </div>
-      <div class="col-md-3">
-        <p>
-          {{ gig.city }}
-        </p>
-      </div>
-      <div class="col-md-4">
-        <p>
-          {{ splitGigDate(gig.date) }}
-          <!-- <br> -->
-          |
-          {{ gig.time }}
-        </p>
-      </div>
-
-      <div class="col-md-2">
-        <a
-          *ngIf="gig.bookUrl"
-          href="{{ gig.bookUrl }}"
-          class="btn btn-themed"
-          matTooltip="Tickets Here"
-          matTooltipPosition="above"
-          ><i class="fa-solid fa-ticket"></i
-        ></a>
-        <button
-          class="btn btn-themed"
-          (click)="addToCalendarAuto(gig)"
-          matTooltip="Add To Calendar"
-          matTooltipPosition="above"
-        >
-          <i class="fa-regular fa-calendar-plus"></i>
-        </button>
-      </div>
-    </div>
+  
+  
+  
+  <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
+  <a class="bit-widget-initializer"
+    
+	data-artist-name="id_15638788"
+	
+	data-background-color="rgba(0,0,0,1)"
+	data-separator-color="rgba(255,255,255,1)"
+	data-text-color="rgba(145,53,151,1)"
+	data-font="DELIRIUM"
+	data-display-details="true"
+	data-display-lineup="true"
+	data-display-start-time="true"
+	data-social-share-icon="true"
+	data-date-format="MMM. DD"
+	data-date-orientation="vertical"
+	data-event-ticket-cta-size="large"
+	data-event-ticket-text="TICKETS"
+	data-event-ticket-icon="true"
+	data-event-ticket-cta-text-color="rgba(255,255,255,1)"
+	data-event-ticket-cta-bg-color="rgba(145,53,151,1)"
+	data-event-ticket-cta-border-width="1px"
+	data-event-ticket-cta-border-radius="10px"
+	
+	data-sold-out-button-text-color="rgba(145,53,151,1)"
+	data-sold-out-button-background-color="rgba(255,255,255,1)"
+	data-event-rsvp-position="left"
+	data-event-rsvp-cta-size="medium"
+	data-event-rsvp-only-show-icon="true"
+	data-event-rsvp-text="REMIND ME"
+	data-event-rsvp-cta-text-color="rgba(145,53,151,1)"
+	data-follow-section-position="top"
+	data-follow-section-alignment="center"
+	data-follow-section-cta-text="FOLLOW"
+	data-follow-section-cta-text-color="rgba(255,255,255,1)"
+	data-follow-section-cta-bg-color="rgba(145,53,151,1)"
+	data-play-my-city-position="bottom"
+	data-play-my-city-alignment="center"
+	data-play-my-city-cta-text-color="rgba(255,255,255,1)"
+	data-play-my-city-cta-bg-color="rgba(145,53,151,1)"
+	data-app-id="f429f6a9dc5db956166c9dbc2abfcc06"
+	data-bit-logo-color="rgba(145,53,151,1)"
+	
+    ></a>
   </div>
-</div>
-
-<ng-template #NoGigs>
-  <div class="p-5">
-    <h5>No upcoming gigs scheduled</h5>
-  </div>
-</ng-template>
