@@ -5,11 +5,12 @@ import { SongsComponent } from './components/songs/songs.component';
 import { CommonModule } from '@angular/common';
 import { PhotosComponent } from './components/photos/photos.component';
 import { AdminFormComponent } from './components/admin-form/admin-form.component';
+import { EventsComponent } from './components/events/events.component';
 
 const routes: Routes = [
   { path: '', component: PhotosComponent },
-  { path: 'listen', component: SongsComponent },
-  { path: '2girls1CupAdmin', component: AdminFormComponent },
+  // { path: 'events', component: EventsComponent },
+  { path: '2Girls1CupAdmin', component: AdminFormComponent },
 
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
